@@ -23,6 +23,14 @@ const has = (values, value) => {
 const base = range(0);
 has(base);
 
+/**
+ * Yields all numbers from `start`, included, to `stop`, excluded,
+ * optionally incrementing via `step`.
+ * @param {number} start if `stop` is not present, becomes `0` and `stop` will be the `start` limit.
+ * @param {number} [stop=start] if present, it signals the limit (excluded) of the range.
+ * @param {number} [step=1] if present, it's used to increment the range from `start` (included) to `stop` (excluded).
+ * @return {Generator<number>}
+ */
 export default (...args) => {
   const values = () => range(...args);
   return new Proxy(base, {

@@ -1,5 +1,7 @@
 # @webreflection/range
 
+[![build status](https://github.com/WebReflection/range/actions/workflows/node.js.yml/badge.svg)](https://github.com/WebReflection/range/actions) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/range/badge.svg?branch=main)](https://coveralls.io/github/WebReflection/range?branch=main)
+
 A Pythonic `range(start[, stop[, steps = 1]])` function that works in both `for / of` and with `value in range(...)` operations.
 
 ```js
